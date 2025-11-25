@@ -1,0 +1,8 @@
+# Arquivos de Sistema e Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# ARQUIVOS DE SEGURANÇA (NÃO APAGUE ISSO)
+api_key.txt

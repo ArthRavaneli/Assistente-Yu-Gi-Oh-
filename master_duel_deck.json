@@ -1,0 +1,290 @@
+[
+    {
+        "nome_pt": "Dragão Branco de Olhos Azuis",
+        "nome_ingles": "Blue-Eyes White Dragon",
+        "tipo": "Normal Monster",
+        "efeito": "This legendary dragon is a powerful engine of destruction. Virtually invincible, very few have faced this awesome creature and lived to tell the tale.",
+        "atk": 3000,
+        "def": 2500,
+        "nivel": 8
+    },
+    {
+        "nome_pt": "A Pedra Branca das Lendas",
+        "nome_ingles": "The White Stone of Legend",
+        "tipo": "Tuner Monster",
+        "efeito": "If this card is sent to the GY: Add 1 \"Blue-Eyes White Dragon\" from your Deck to your hand.",
+        "atk": 300,
+        "def": 250,
+        "nivel": 1
+    },
+    {
+        "nome_pt": "Sábio com Azul nos Olhos",
+        "nome_ingles": "Sage with Eyes of Blue",
+        "tipo": "Tuner Monster",
+        "efeito": "When this card is Normal Summoned: You can add 1 Level 1 LIGHT Tuner from your Deck to your hand, except \"Sage with Eyes of Blue\". You can discard this card, then target 1 Effect Monster you control; send it to the GY, and if you do, Special Summon 1 \"Blue-Eyes\" monster from your Deck. You can only use this effect of \"Sage with Eyes of Blue\" once per turn.",
+        "atk": 0,
+        "def": 1500,
+        "nivel": 1
+    },
+    {
+        "nome_pt": "A Pedra Branca dos Antigos",
+        "nome_ingles": "The White Stone of Ancients",
+        "tipo": "Tuner Monster",
+        "efeito": "Once per turn, during the End Phase, if this card is in the GY because it was sent there this turn: You can Special Summon 1 \"Blue-Eyes\" monster from your Deck. You can banish this card from your GY, then target 1 \"Blue-Eyes\" monster in your GY; add it to your hand. You can only use this effect of \"The White Stone of Ancients\" once per turn.",
+        "atk": 600,
+        "def": 500,
+        "nivel": 1
+    },
+    {
+        "nome_pt": "Florescer de Cinzas & Primavera",
+        "nome_ingles": "Ash Blossom & Joyous Spring",
+        "tipo": "Tuner Monster",
+        "efeito": "When a card or effect is activated that includes any of these effects (Quick Effect): You can discard this card; negate that effect.\r\n● Add a card from the Deck to the hand.\r\n● Special Summon from the Deck.\r\n● Send a card from the Deck to the GY.\r\nYou can only use this effect of \"Ash Blossom & Joyous Spring\" once per turn.",
+        "atk": 0,
+        "def": 1800,
+        "nivel": 3
+    },
+    {
+        "nome_pt": "Ditador dos Dragões",
+        "nome_ingles": "Dictator of D.",
+        "tipo": "Effect Monster",
+        "efeito": "While you control a \"Blue-Eyes\" monster, you choose the attack targets for your opponent's attacks. You can only use each of the following effects of \"Dictator of D.\" once per turn. You can send 1 \"Blue-Eyes White Dragon\" from your hand or Deck to the GY; Special Summon this card from your hand. You can discard 1 \"Blue-Eyes White Dragon\", or 1 card that mentions it, then target 1 \"Blue-Eyes\" monster in your GY; Special Summon it.",
+        "atk": 1200,
+        "def": 1100,
+        "nivel": 4
+    },
+    {
+        "nome_pt": "Dragão Branco Alternativo de Olhos Azuis",
+        "nome_ingles": "Blue-Eyes Alternative White Dragon",
+        "tipo": "Effect Monster",
+        "efeito": "Cannot be Normal Summoned/Set. Must first be Special Summoned (from your hand) by revealing \"Blue-Eyes White Dragon\" in your hand. You can only Special Summon \"Blue-Eyes Alternative White Dragon\" once per turn this way. This card's name becomes \"Blue-Eyes White Dragon\" while it is on the field or in the Graveyard. Once per turn: You can target 1 monster your opponent controls; destroy it. This card cannot attack the turn this effect is activated.",
+        "atk": 3000,
+        "def": 2500,
+        "nivel": 8
+    },
+    {
+        "nome_pt": "Espírito Dragão de Branco",
+        "nome_ingles": "Dragon Spirit of White",
+        "tipo": "Effect Monster",
+        "efeito": "(This card is always treated as a \"Blue-Eyes\" card.)\r\nThis card is treated as a Normal Monster while in the hand or GY. When this card is Normal or Special Summoned: You can target 1 Spell/Trap your opponent controls; banish it. If your opponent controls a monster (Quick Effect): You can Tribute this card; Special Summon 1 \"Blue-Eyes White Dragon\" from your hand.",
+        "atk": 2500,
+        "def": 2000,
+        "nivel": 8
+    },
+    {
+        "nome_pt": "Dragão do Abismo de Olhos Azuis",
+        "nome_ingles": "Blue-Eyes Abyss Dragon",
+        "tipo": "Effect Monster",
+        "efeito": "If this card is Special Summoned: You can add 1 Ritual Spell or 1 \"Polymerization\" from your Deck to your hand. During your End Phase: You can add 1 Level 8 or higher Dragon monster from your Deck to your hand. You can banish this card from your GY; all Level 8 or higher Dragon monsters you control gain 1000 ATK. You can only use each effect of \"Blue-Eyes Abyss Dragon\" once per turn, and can only activate them while \"Blue-Eyes White Dragon\" is on your field or in your GY.",
+        "atk": 2500,
+        "def": 2500,
+        "nivel": 8
+    },
+    {
+        "nome_pt": "Dragão Jato de Olhos Azuis",
+        "nome_ingles": "Blue-Eyes Jet Dragon",
+        "tipo": "Effect Monster",
+        "efeito": "Other cards you control cannot be destroyed by your opponent's card effects. You can only use each of the following effects of \"Blue-Eyes Jet Dragon\" once per turn, and can only activate them while \"Blue-Eyes White Dragon\" is on your field or in your GY. If a card(s) on the field is destroyed by battle or card effect: You can Special Summon this card from the GY (if it was there when the card was destroyed) or hand (even if not). At the start of the Damage Step, if this card battles: You can target 1 card your opponent controls; return it to the hand.",
+        "atk": 3000,
+        "def": 0,
+        "nivel": 8
+    },
+    {
+        "nome_pt": "Dragão Branco de Olhos Profundos",
+        "nome_ingles": "Deep-Eyes White Dragon",
+        "tipo": "Effect Monster",
+        "efeito": "When a face-up \"Blue-Eyes\" monster(s) you control is destroyed by battle or an opponent's card effect, and you have a Dragon-Type monster in your Graveyard: You can Special Summon this card from your hand, and if you do, inflict 600 damage to your opponent for each Dragon-Type monster with different names in your Graveyard. If this card is Normal or Special Summoned: Target 1 Dragon-Type monster in your Graveyard; this card's ATK becomes equal to that monster's. If this card on the field is destroyed by a card effect: Destroy all monsters your opponent controls.",
+        "atk": 0,
+        "def": 0,
+        "nivel": 10
+    },
+    {
+        "nome_pt": "Dragão MÁX do Caos de Olhos Azuis",
+        "nome_ingles": "Blue-Eyes Chaos MAX Dragon",
+        "tipo": "Ritual Effect Monster",
+        "efeito": "You can Ritual Summon this card with \"Chaos Form\". Must be Ritual Summoned. Your opponent cannot target this card with card effects, also it cannot be destroyed by your opponent's card effects. If this card attacks a Defense Position monster, inflict double piercing battle damage.",
+        "atk": 4000,
+        "def": 0,
+        "nivel": 8
+    },
+    {
+        "nome_pt": "Raigeki",
+        "nome_ingles": "Raigeki",
+        "tipo": "Spell Card",
+        "efeito": "Destroy all monsters your opponent controls.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Reviver Monstro",
+        "nome_ingles": "Monster Reborn",
+        "tipo": "Spell Card",
+        "efeito": "Target 1 monster in either GY; Special Summon it.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Trocar",
+        "nome_ingles": "Change of Heart",
+        "tipo": "Spell Card",
+        "efeito": "Target 1 monster your opponent controls; take control of it until the End Phase.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Tempestade de Relâmpagos",
+        "nome_ingles": "Lightning Storm",
+        "tipo": "Spell Card",
+        "efeito": "If you control no face-up cards: Activate 1 of these effects;\r\n● Destroy all Attack Position monsters your opponent controls.\r\n● Destroy all Spells and Traps your opponent controls.\r\nYou can only activate 1 \"Lightning Storm\" per turn.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "A Melodia do Despertar do Dragão",
+        "nome_ingles": "The Melody of Awakening Dragon",
+        "tipo": "Spell Card",
+        "efeito": "Discard 1 card; add up to 2 Dragon monsters with 3000 or more ATK and 2500 or less DEF from your Deck to your hand.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Cards da Consonância",
+        "nome_ingles": "Cards of Consonance",
+        "tipo": "Spell Card",
+        "efeito": "Discard 1 Dragon Tuner with 1000 or less ATK; draw 2 cards.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Retorno dos Senhores Dragão",
+        "nome_ingles": "Return of the Dragon Lords",
+        "tipo": "Spell Card",
+        "efeito": "Target 1 Level 7 or 8 Dragon monster in your GY; Special Summon it. If a Dragon monster(s) you control would be destroyed by battle or card effect, you can banish this card from your GY instead.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Forma do Caos",
+        "nome_ingles": "Chaos Form",
+        "tipo": "Spell Card",
+        "efeito": "This card can be used to Ritual Summon any \"Chaos\" or \"Black Luster Soldier\" Ritual Monster. You must also Tribute monsters from your hand or field and/or banish \"Blue-Eyes White Dragon\" or \"Dark Magician\" from your GY, whose total Levels exactly equal the Level of the \"Chaos\" or \"Black Luster Soldier\" Ritual Monster you Ritual Summon.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Alma do Sucessor",
+        "nome_ingles": "Successor Soul",
+        "tipo": "Spell Card",
+        "efeito": "Tribute 1 Effect Monster, then target 1 Effect Monster your opponent controls; send it to the GY, then Special Summon 1 Level 7 or higher Normal Monster from your hand or Deck. You can only activate 1 \"Successor Soul\" per turn. You can only attack with 1 monster during the turn you activate this card.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Fusão Definitiva",
+        "nome_ingles": "Ultimate Fusion",
+        "tipo": "Spell Card",
+        "efeito": "During the Main Phase: Fusion Summon 1 Fusion Monster from your Extra Deck that mentions \"Blue-Eyes White Dragon\" or \"Blue-Eyes Ultimate Dragon\" as material, by shuffling the Fusion Materials listed on it from your hand, field, and/or GY into the Deck, then, you can destroy face-up cards your opponent controls, up to the number of \"Blue-Eyes White Dragon\" and \"Blue-Eyes Ultimate Dragon\" used from the field as material. You can only activate 1 \"Ultimate Fusion\" per turn.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Impermanência Infinita",
+        "nome_ingles": "Infinite Impermanence",
+        "tipo": "Trap Card",
+        "efeito": "Target 1 face-up monster your opponent controls; negate its effects (until the end of this turn), then, if this card was Set before activation and is on the field at resolution, for the rest of this turn all other Spell/Trap effects in this column are negated. If you control no cards, you can activate this card from your hand.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "A Criatura Definitiva da Destruição",
+        "nome_ingles": "The Ultimate Creature of Destruction",
+        "tipo": "Trap Card",
+        "efeito": "Target 1 \"Blue-Eyes\" monster you control; this turn, that face-up monster is unaffected by card effects, except its own, it cannot be destroyed by battle, also any opponent's monster it battles is destroyed at the end of the Damage Step. While this card is in your GY, if you Normal or Special Summon a \"Blue-Eyes White Dragon\": You can Set this card, but banish it when it leaves the field. You can only use this effect of \"The Ultimate Creature of Destruction\" once per turn.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Rivais Destinados",
+        "nome_ingles": "Destined Rivals",
+        "tipo": "Trap Card",
+        "efeito": "If you control \"Blue-Eyes White Dragon\" or \"Dark Magician\": Negate the effects of all face-up monsters your opponent currently controls, until the end of this turn. You can only activate 1 \"Destined Rivals\" per turn.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Luz Verdadeira",
+        "nome_ingles": "True Light",
+        "tipo": "Trap Card",
+        "efeito": "Your opponent cannot target \"Blue-Eyes White Dragon\" in your Monster Zone with card effects. If this face-up card is sent from the Spell & Trap Zone to the GY: Destroy all monsters you control. You can only use the following effect of \"True Light\" once per turn. You can activate 1 of these effects;\r\n● Special Summon 1 \"Blue-Eyes White Dragon\" from your hand or GY.\r\n● Set 1 Spell/Trap directly from your Deck, that specifically lists \"Blue-Eyes White Dragon\" in its text, with a different name from the cards you control and in your GY.",
+        "atk": "N/A",
+        "def": "N/A",
+        "nivel": "N/A"
+    },
+    {
+        "nome_pt": "Dragão Tirano de Olhos Azuis",
+        "nome_ingles": "Blue-Eyes Tyrant Dragon",
+        "tipo": "Fusion Monster",
+        "efeito": "\"Blue-Eyes White Dragon\" + 1 Dragon monster\r\nMust first be either Fusion Summoned, or Special Summoned from your Extra Deck by Tributing 1 \"Blue-Eyes White Dragon\" equipped with a Fusion Monster. Unaffected by Trap Cards or effects. This card can attack all monsters your opponent controls, once each. Once per turn, at the end of the Damage Step, if this card battled: You can target 1 Trap in your GY; Set it to your Spell & Trap Zone.",
+        "atk": 3400,
+        "def": 2900,
+        "nivel": 8
+    },
+    {
+        "nome_pt": "Dragão Gêmeo da Explosão de Olhos Azuis",
+        "nome_ingles": "Blue-Eyes Twin Burst Dragon",
+        "tipo": "Fusion Monster",
+        "efeito": "\"Blue-Eyes White Dragon\" + \"Blue-Eyes White Dragon\"\r\nMust be either Fusion Summoned, or Special Summoned by sending the above monsters you control to the GY (in which case you do not use \"Polymerization\"). Cannot be destroyed by battle. This card can make up to 2 attacks on monsters during each Battle Phase. At the end of the Damage Step, when this card attacks an opponent's monster, but the opponent's monster was not destroyed by the battle: You can banish that opponent's monster.",
+        "atk": 3000,
+        "def": 2500,
+        "nivel": 10
+    },
+    {
+        "nome_pt": "Dragão Prateado de Olhos Cerúleos",
+        "nome_ingles": "Azure-Eyes Silver Dragon",
+        "tipo": "Synchro Monster",
+        "efeito": "1 Tuner + 1+ non-Tuner Normal Monsters\r\nIf this card is Special Summoned: Until the end of the next turn, neither player can target Dragon monsters you currently control with card effects, also they cannot be destroyed by card effects. Once per turn, during your Standby Phase: You can target 1 Normal Monster in your GY; Special Summon it.",
+        "atk": 2500,
+        "def": 3000,
+        "nivel": 9
+    },
+    {
+        "nome_pt": "Dragão Espírito de Olhos Azuis",
+        "nome_ingles": "Blue-Eyes Spirit Dragon",
+        "tipo": "Synchro Monster",
+        "efeito": "1 Tuner + 1 or more non-Tuner \"Blue-Eyes\" monsters\r\nNeither player can Special Summon 2 or more monsters at the same time. Once per turn, during either player's turn, when an effect of a card in the Graveyard is activated: You can negate the activation. During either player's turn: You can Tribute this Synchro Summoned card; Special Summon 1 LIGHT Dragon-Type Synchro Monster from your Extra Deck in Defense Position, except \"Blue-Eyes Spirit Dragon\", but destroy it during the End Phase of this turn.",
+        "atk": 2500,
+        "def": 3000,
+        "nivel": 9
+    },
+    {
+        "nome_pt": "Dragão Solar Hierático Suserano de Heliópolis",
+        "nome_ingles": "Hieratic Sun Dragon Overlord of Heliopolis",
+        "tipo": "XYZ Monster",
+        "efeito": "2 Level 8 monsters\nOnce per turn: You can detach 1 Xyz Material from this card; Tribute any number of monsters from your hand and/or your side of the field (minimum 1), then destroy an equal number of cards on the field.",
+        "atk": 3000,
+        "def": 2400,
+        "nivel": 8
+    },
+    {
+        "nome_pt": "Dragão-Guarda Pisty",
+        "nome_ingles": "Guardragon Pisty",
+        "tipo": "Link Monster",
+        "efeito": "1 Level 4 or lower Dragon monster\r\nYou cannot Special Summon monsters, except Dragon monsters. During your Main Phase: You can target 1 of your Dragon monsters that is banished or in your GY; Special Summon it to your zone that 2 or more Link Monsters point to. You can only use this effect of \"Guardragon Pisty\" once per turn. You can only Special Summon \"Guardragon Pisty(s)\" once per turn.",
+        "atk": 1000,
+        "def": null,
+        "nivel": null
+    }
+]
