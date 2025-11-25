@@ -51,12 +51,7 @@ minha_lista_pt = [
     "Dragão-Guarda Pisty",
 ]
 
-# --- CORREÇÕES MANUAIS (O TIRA-TEIMA) ---
-# Se a IA errar ou a API não achar, coloque a correção aqui.
-# Formato: "Nome em Português da lista": "Nome Oficial em Inglês Correto"
-CORRECOES_MANUAIS = {
-    
-}
+CORRECOES_MANUAIS = {}
 
 def traduzir_nomes(lista_pt):
     print("🤖 A IA está traduzindo os nomes para o Inglês oficial...")
