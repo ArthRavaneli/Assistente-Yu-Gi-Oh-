@@ -53,6 +53,7 @@ Certifique-se de ter o Python instalado. Clone o repositório e instale as depen
 
 ```bash
 pip install google-generativeai streamlit st-clickable-images requests pillow
+```
 
 ## 🚀 Como Usar (Tutorial Rápido)
 
