@@ -62,7 +62,9 @@ Este programa precisa de um "cérebro" para funcionar.
 1.  Crie um arquivo de texto chamado `api_key.txt` na **pasta principal** do projeto (junto com o executável).
 2.  Cole dentro dele apenas a sua chave de API do Google AI Studio.
 
-![Tela do App](galeria_prints/API_KEY.png)
+<p align="center">
+<img src="galeria_prints/API_KEY.png" width="700">
+</p>
 
 > **⚠️ Atenção aos Modelos de IA:**
 > O código está configurado por padrão para usar os modelos **`gemini-1.5-pro`** (para ler PDFs) e **`gemini-2.5-flash`** (para estratégia).
@@ -81,4 +83,9 @@ Não é necessário usar o terminal. Basta abrir o arquivo **`YuGiOh Duel Assist
 2.  Clique no botão **"🚀 INICIAR APLICATIVO"**:
     * O painel tático abrirá no seu navegador. Selecione seu deck na barra lateral e comece a montar sua mão!
 
-![Tela do App](galeria_prints/launcher_app.png)
+<p align="center">
+<img src="galeria_prints/launcher_app.png" width="700">
+</p>
+
+
+
