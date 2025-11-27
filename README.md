@@ -29,10 +29,10 @@ Este projeto resolve a complexidade de pilotar decks meta em *Yu-Gi-Oh! Master D
 ### Análise de Cenários
 
 <p align="center">
-  <img src="galeria_prints/primeira_mao_ruim.png" width="80%">
+  <img src="galeria_prints/primeira_mao_ruim_txt.png" width="80%">
 </p>
 <p align="center">
-  <img src="galeria_prints/primeira_mao_boa.png" width="80%">
+  <img src="galeria_prints/primeira_mao_boa_txt.png" width="80%">
 </p>
 
 ### O Fluxo de Trabalho (Pipeline)
