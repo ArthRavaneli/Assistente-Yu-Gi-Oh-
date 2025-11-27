@@ -2,7 +2,7 @@
 
 Um assistente tático inteligente para Yu-Gi-Oh! Master Duel que converte listas de decks em PDF para bancos de dados estruturados e utiliza LLMs avançadas para sugerir as melhores jogadas (combos) em tempo real baseadas na mão inicial.
 
-![Tela do App](galeria_prints/print_galeria.png)
+![combo_dragao_9k](galeria_prints/print_galeria.png)
 
 💡 Sobre o Projeto
 
