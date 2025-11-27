@@ -3,12 +3,17 @@ import requests
 import json
 import time
 import os
-import re
 import base64
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
 
-# --- CONFIGURAÇÃO ---
+# --- CONFIGURAÇÃO DE CAMINHOS ---
+PASTA_DECKS = "yu_gi_oh_decks"
+
+# Garante que a pasta existe (cria se não existir)
+if not os.path.exists(PASTA_DECKS):
+    os.makedirs(PASTA_DECKS)
+
 def pegar_chave():
     """Tenta ler a API Key do arquivo api_key.txt"""
     try:
@@ -23,12 +28,14 @@ def buscar_dados_api(nome_ingles):
     """Busca na API YGOPRODeck, tentando PT-BR e depois EN."""
     url_api = "https://db.ygoprodeck.com/api/v7/cardinfo.php"
     
+    # 1. Tenta PT (para o nome bonito)
     try:
         r = requests.get(url_api, params={"name": nome_ingles, "language": "pt"})
         data = r.json()
         if "data" in data: return data["data"][0]
     except: pass
 
+    # 2. Tenta EN (para garantir que pega o efeito)
     try:
         r = requests.get(url_api, params={"name": nome_ingles})
         data = r.json()
@@ -67,41 +74,44 @@ def processar_imagem_com_badge(url_imagem, quantidade):
 # --- FUNÇÃO PRINCIPAL: LER O PDF E GERAR O JSON ---
 def criar_deck_via_pdf():
     print("--- 📑 IMPORTADOR DECK PDF COM IA ---")
+    print(f"📂 Diretório de trabalho: ./{PASTA_DECKS}/")
     
     # 1. Entrada do usuário
-    pdf_arquivo_input = input("Digite o NOME do arquivo PDF (ex: deck_dragao_branco.pdf): ").strip()
+    pdf_arquivo_input = input("Digite o NOME do arquivo PDF (ex: deck_dragao_branco): ").strip()
     
-    # --- VERIFICAÇÃO ROBUSTA DO NOME DO ARQUIVO ---
+    # --- VERIFICAÇÃO ROBUSTA COM CAMINHO DA PASTA ---
     pdf_arquivo_full = None
     
-    # 1. Checa se o nome digitado existe (se o usuário incluiu o .pdf)
-    if os.path.exists(pdf_arquivo_input):
-        pdf_arquivo_full = pdf_arquivo_input
-    # 2. Checa se o nome digitado + .pdf existe (se o usuário omitiu o .pdf)
-    elif os.path.exists(pdf_arquivo_input + ".pdf"):
-        pdf_arquivo_full = pdf_arquivo_input + ".pdf"
-
+    # Monta os caminhos possíveis DENTRO DA PASTA DE DECKS
+    caminho_com_pdf = os.path.join(PASTA_DECKS, pdf_arquivo_input if pdf_arquivo_input.endswith(".pdf") else pdf_arquivo_input + ".pdf")
+    
+    # Verifica se o arquivo existe
+    if os.path.exists(caminho_com_pdf):
+        pdf_arquivo_full = caminho_com_pdf
+    
     if not pdf_arquivo_full:
-        print(f"❌ Erro: Arquivo '{pdf_arquivo_input}' (ou '{pdf_arquivo_input}.pdf') não encontrado na pasta.")
-        print(f"DICA: O arquivo DEVE estar na mesma pasta do 'importar_pdf.py'.")
+        print(f"❌ Erro: Arquivo não encontrado em '{caminho_com_pdf}'")
+        print(f"DICA: O arquivo PDF deve estar dentro da pasta '{PASTA_DECKS}'.")
         return
         
-    # Nomeia o JSON com base no nome do PDF
-    base_name = os.path.splitext(pdf_arquivo_full)[0]
-    nome_json = f"{base_name}.json"
+    # Nomeia o JSON com base no nome do PDF (e define caminho de saída na pasta certa)
+    nome_arquivo_pdf = os.path.basename(pdf_arquivo_full)
+    base_name = os.path.splitext(nome_arquivo_pdf)[0]
+    caminho_json_saida = os.path.join(PASTA_DECKS, f"{base_name}.json")
 
     if not API_KEY: 
         print("❌ Sem chave API. Insira sua chave no 'api_key.txt'.")
         return
 
-    # 1. ANÁLISE ESTRUTURAL DO PDF COM GEMINI PRO
+    # 1. ANÁLISE ESTRUTURAL DO PDF COM GEMINI
     print(f"\n👁️ Enviando '{pdf_arquivo_full}' para análise estrutural (Gemini Flash)...")
     
     genai.configure(api_key=API_KEY)
+    # Mantivemos o modelo que estava no seu código (Flash)
     model = genai.GenerativeModel('gemini-2.5-flash') 
     
     try:
-        # AQUI USAMOS O NOME COMPLETO VERIFICADO
+        # AQUI USAMOS O CAMINHO COMPLETO (pasta/arquivo.pdf)
         pdf_file = genai.upload_file(pdf_arquivo_full) 
     except Exception as e:
         print(f"❌ Erro ao subir arquivo para IA: {e}")
@@ -123,6 +133,7 @@ def criar_deck_via_pdf():
     
     lista_cartas = []
     try:
+        # Usando generation_config conforme sua versão corrigida
         response = model.generate_content([prompt, pdf_file], 
             generation_config={"response_mime_type": "application/json"}
         )
@@ -179,12 +190,12 @@ def criar_deck_via_pdf():
         
         time.sleep(0.05)
 
-    # 3. Salvar
-    with open(nome_json, "w", encoding="utf-8") as f:
+    # 3. Salvar (Agora no caminho correto dentro da pasta)
+    with open(caminho_json_saida, "w", encoding="utf-8") as f:
         json.dump(banco_final, f, indent=4, ensure_ascii=False)
     
     print("-" * 50)
-    print(f"🎉 SUCESSO! Deck salvo em '{nome_json}'.")
+    print(f"🎉 SUCESSO! Deck salvo em '{caminho_json_saida}'.")
 
 if __name__ == "__main__":
     criar_deck_via_pdf()

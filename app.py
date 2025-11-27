@@ -7,6 +7,13 @@ from st_clickable_images import clickable_images
 # --- CONFIGURAÇÃO ---
 st.set_page_config(page_title="Yu-Gi-Oh! AI", page_icon="🐉", layout="wide")
 
+# --- DEFINIÇÃO DA PASTA DE DECKS ---
+PASTA_DECKS = "yu_gi_oh_decks"
+
+# Cria a pasta se ela não existir para evitar erros
+if not os.path.exists(PASTA_DECKS):
+    os.makedirs(PASTA_DECKS)
+
 # --- CSS AVANÇADO (DESIGN VISUAL) ---
 st.markdown("""
     <style>
@@ -36,18 +43,23 @@ def carregar_chave_arquivo():
     return None
 
 def listar_decks():
-    arquivos = [f for f in os.listdir('.') if f.endswith('.json')]
+    """Retorna uma lista de todos os arquivos .json DENTRO da pasta yu_gi_oh_decks."""
+    # Lista arquivos da pasta específica
+    arquivos = [f for f in os.listdir(PASTA_DECKS) if f.endswith('.json')]
     return [f for f in arquivos if not f.startswith('~')]
 
 @st.cache_data
 def carregar_banco_por_nome(nome_arquivo):
+    """Carrega o JSON especificado de dentro da pasta yu_gi_oh_decks."""
+    # Monta o caminho completo: yu_gi_oh_decks/nome_arquivo.json
+    caminho_completo = os.path.join(PASTA_DECKS, nome_arquivo)
     try:
-        with open(nome_arquivo, "r", encoding="utf-8") as f:
+        with open(caminho_completo, "r", encoding="utf-8") as f:
             dados = json.load(f)
             dados.sort(key=lambda x: x['nome_pt'])
             return dados
     except Exception as e: 
-        raise Exception(f"Erro ao carregar '{nome_arquivo}': {e}")
+        raise Exception(f"Erro ao carregar '{caminho_completo}': {e}")
         return []
 
 # --- RENDERIZAÇÃO DA GALERIA (CORREÇÃO SINTÁTICA) ---
@@ -97,7 +109,7 @@ with st.sidebar:
         deck_selecionado_nome = st.selectbox("📚 Escolha o Deck:", decks_encontrados)
     else:
         deck_selecionado_nome = None
-        st.warning("Nenhum arquivo JSON de deck encontrado.")
+        st.warning(f"Nenhum deck encontrado em '{PASTA_DECKS}'.")
         
     if deck_selecionado_nome:
         default_name = deck_selecionado_nome.replace(".json", "").replace("_", " ").title()
@@ -227,4 +239,4 @@ if deck_data:
     renderizar_galeria("🟣 Extra Deck", extra, "extra", colunas_fixas=6)
 
 else:
-    st.error(f"Banco de dados vazio. Coloque um arquivo .json na pasta ou rode o importador de decks.")
+    st.error(f"Nenhum deck encontrado na pasta '{PASTA_DECKS}'. Rode o importador de PDFs.")
