@@ -63,7 +63,7 @@ Este programa precisa de um "cérebro" para funcionar.
 2.  Cole dentro dele apenas a sua chave de API do Google AI Studio.
 
 <p align="center">
-<img src="galeria_prints/API_KEY.png" width="700">
+<img src="galeria_prints/API_KEY.png" width="400">
 </p>
 
 > **⚠️ Atenção aos Modelos de IA:**
@@ -84,7 +84,7 @@ Não é necessário usar o terminal. Basta abrir o arquivo **`YuGiOh Duel Assist
     * O painel tático abrirá no seu navegador. Selecione seu deck na barra lateral e comece a montar sua mão!
 
 <p align="center">
-<img src="galeria_prints/launcher_app.png" width="700">
+<img src="galeria_prints/launcher_app.png" width="550">
 </p>
 
 
