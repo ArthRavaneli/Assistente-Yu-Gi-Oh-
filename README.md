@@ -50,7 +50,7 @@ Este projeto resolve a complexidade de pilotar decks meta em *Yu-Gi-Oh! Master D
    * Utiliza a biblioteca **Pillow** para processar as imagens, "carimbando" visualmente a quantidade de cópias (x1, x2, x3) diretamente no arquivo de imagem.
    * Gera um banco de dados local `.json` persistente.
 
-   <p align="center"><img src="galeria_prints/analisando_pdf.png" width="600"></p>
+   <p align="center"><img src="galeria_prints/processando_pdf.png" width="650"></p>
 
 3. **Interface Tática (`app.py`):**
    * Interface visual interativa construída em **Streamlit** com design customizado (CSS).
