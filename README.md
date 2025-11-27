@@ -2,19 +2,27 @@
 
 Um assistente tático inteligente para Yu-Gi-Oh! Master Duel que converte listas de decks em PDF para bancos de dados estruturados e utiliza LLMs avançadas para sugerir as melhores jogadas (combos) em tempo real baseadas na mão inicial.
 
+![Tela do App](galeria_prints/tela_aplicativo.png)
 ![Tela do Jogo](galeria_prints/combo_dragao_9k.png)
 
 💡 Sobre o Projeto
 
 Este projeto resolve a complexidade de pilotar decks meta em Yu-Gi-Oh! Master Duel. Ele elimina a necessidade de entrada manual de dados, utilizando IA para ler arquivos exportados diretamente do jogo e criando um sistema de RAG (Retrieval-Augmented Generation) para fornecer conselhos estratégicos contextualizados.
 
+![Tela do App](galeria_prints/primeira_mao_ruim.png)
+![Tela do App](galeria_prints/primeira_mao_boa.png)
+
 O Fluxo de Trabalho (Pipeline)
 
 1. Exportação: O usuário exporta seu deck do jogo para o site oficial da Konami (Yu-Gi-Oh! Card Database) usando uma função presente no próprio jogo e baixa a lista em formato .PDF.
 
+![YGO Card Database](galeria_prints/download_pdf_deck.png)
+
 2. Ingestão Inteligente (importar_pdf.py):
 
     •  Utiliza o modelo Gemini 1.5 Pro para ler e interpretar a estrutura do PDF.
+
+![PDF do Deck](galeria_prints/estrutura_pdf.png)
 
     •  Cruza os dados com a API pública do YGOPRODeck para obter metadados e imagens em alta resolução.
 
